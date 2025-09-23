@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exerices</title>
+</head>
+<body>
+
+  <button onclick="
+    greet();
+    ">GREET</button>
+
+  <script>
+    /* function greet(hello, name = 'Hi there!'){
+      console.log (hello, name)
+      if(name === true){
+        console.log(name);
+      } else if (name === false){
+        console.log(name);
+      }
+      
+    }
+    greet('Hello!', 'Simon');
+    greet('Hello!', ) */
+
+
+    function convertToFarenheit(celcius){
+      let Farenheit = (celcius * 9/5) + 32;
+      return  Farenheit;
+    }
+    convertToFarenheit(25);
+
+    function convertToCelcius(fahrenheit){
+      let Celcius = (fahrenheit - 32) * 5/9;
+      return  Celcius;
+    }
+    convertToCelcius(86);
+    
+    function convertTemperature(degrees, unit){
+      if(unit === 'C'){
+      console.log((degrees * 9/5)+32, unit);
+      } else if (unit === 'F')
+      console.log((degrees - 32 )* 5/9, unit );
+    }
+    convertTemperature(25,'C');
+    convertTemperature(86,'F');
+  </script>
+</body>
+</html>
